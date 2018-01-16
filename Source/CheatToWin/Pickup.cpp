@@ -45,5 +45,6 @@ void APickup::onPlayerEnterPickupBox(UPrimitiveComponent * OverlappedComp, AActo
 	UE_LOG(LogTemp, Warning, TEXT("Your message"));
 	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("This is an on screen message!"));
 
-}
 
+
+}

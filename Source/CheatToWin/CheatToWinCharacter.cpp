@@ -3,6 +3,16 @@
 #include "CheatToWin.h"
 #include "CheatToWinCharacter.h"
 
+int32 ACheatToWinCharacter::getCoin()
+{
+	return Coins;
+}
+
+void ACheatToWinCharacter::updateCoin()
+{
+	++Coins;
+}
+
 ACheatToWinCharacter::ACheatToWinCharacter()
 {
 	// Set size for collision capsule

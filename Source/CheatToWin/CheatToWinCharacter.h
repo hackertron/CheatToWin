@@ -31,6 +31,14 @@ protected:
 	virtual void SetupPlayerInputComponent(class UInputComponent* InputComponent) override;
 	// End of APawn interface
 
+	// get coins
+	UFUNCTION(BlueprintPure, Category = "Coin")
+		int32 getCoin();
+
+	// update coin
+	UFUNCTION(BlueprintCallable, Category = "Coin")
+		void updateCoin();
+
 
 public:
 	ACheatToWinCharacter();
@@ -39,4 +47,8 @@ public:
 	FORCEINLINE class UCameraComponent* GetSideViewCameraComponent() const { return SideViewCameraComponent; }
 	/** Returns CameraBoom subobject **/
 	FORCEINLINE class USpringArmComponent* GetCameraBoom() const { return CameraBoom; }
+
+private:
+	UPROPERTY(EditAnyWhere, Category = "Coin")
+		int32 Coins;
 };
