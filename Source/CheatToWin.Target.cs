@@ -5,21 +5,16 @@ using System.Collections.Generic;
 
 public class CheatToWinTarget : TargetRules
 {
-	public CheatToWinTarget(TargetInfo Target)
+	public CheatToWinTarget(TargetInfo Target) : base(Target)
 	{
 		Type = TargetType.Game;
+
+		ExtraModuleNames.Add("CheatToWin");
 	}
 
 	//
 	// TargetRules interface.
 	//
 
-	public override void SetupBinaries(
-		TargetInfo Target,
-		ref List<UEBuildBinaryConfiguration> OutBuildBinaryConfigurations,
-		ref List<string> OutExtraModuleNames
-		)
-	{
-		OutExtraModuleNames.Add("CheatToWin");
-	}
+
 }

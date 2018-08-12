@@ -4,7 +4,7 @@ using UnrealBuildTool;
 
 public class CheatToWin : ModuleRules
 {
-	public CheatToWin(TargetInfo Target)
+	public CheatToWin(ReadOnlyTargetRules Target) : base (Target)
 	{
 		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "UMG" });
 
