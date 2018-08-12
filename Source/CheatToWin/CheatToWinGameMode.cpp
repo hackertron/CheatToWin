@@ -13,3 +13,11 @@ ACheatToWinGameMode::ACheatToWinGameMode()
 		DefaultPawnClass = PlayerPawnBPClass.Class;
 	}
 }
+
+ACheatToWinGameMode::check_win(int32 coins)
+{
+	if (coins >= 25)
+		return true;
+	else
+		return false;
+}

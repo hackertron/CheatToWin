@@ -10,6 +10,8 @@ class ACheatToWinGameMode : public AGameModeBase
 
 public:
 	ACheatToWinGameMode();
+	bool win = false;
+	bool check_win(int32 coins);
 };
 
 
