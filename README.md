@@ -1,6 +1,8 @@
 # CheatToWin WIP ( Work In Progress )
 A game only for hackers !!
 
+### Try it out now 
+![Download](https://drive.google.com/file/d/1fbkUjzs-Yb0BqocoPxau-vdP7GP11JTu/view?usp=sharing)
 
 ![cheat](https://github.com/hackertron/CheatToWin/blob/dev/cheat.gif?raw=true)
 
